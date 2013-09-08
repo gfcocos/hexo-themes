@@ -1,0 +1,12 @@
+                <% if (page.prev || page.next){ %>
+                <div class="wide">
+                    <div class="center">
+                        <% if (page.prev){ %>
+                        <span class="prev"><a href="<%- config.root %><%- page.prev_link %>">◀</a></span>
+                        <% } %>
+                        <% if (page.next){ %>
+                        <span class="next"><a href="<%- config.root %><%- page.next_link %>">▶</a></span>
+                        <% } %>
+                    </div>
+                </div>
+                <% } %>

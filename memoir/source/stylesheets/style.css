@@ -1,0 +1,511 @@
+@charset "utf-8";
+
+/* ?????????????????????????????? */
+html {
+    color: #555;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* ????????????????????? */
+body, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+/* ?? HTML5 ??, IE ??? js ? createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* HTML5 ????? img ???? */
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* ????????????? font ??? */
+body, button, input, select, textarea {
+    font:400 14px/1.8 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif
+}
+
+/* ???Table  cell ????????? */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* IE bug fixed: th ??? text-align*/
+th {
+    text-align: inherit;
+}
+
+/* ?????? */
+fieldset, img {
+    border: 0;
+}
+
+/* ?? IE6-7 ???????? */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+/* ie6 7 8(q) bug ??????? */
+iframe {
+    display: block;
+}
+
+/* Firefox ?????????????? */
+acronym, abbr {
+    border-bottom: 1px dotted;
+    font-variant: normal;
+}
+
+/* ?????????????????????????????????????????????????? */
+abbr {
+    cursor: help;
+}
+
+/* ??? del ?? */
+del {
+    text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul, ol {
+    list-style: none;
+}
+
+/* ???????????, ??????? */
+caption, th {
+    text-align: left;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+/* ??????? */
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: text-top\9;
+}
+:root sub, :root sup{
+    vertical-align: baseline; /* for ie9 and other mordern browsers */
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+
+/* ???? hover ???????? */
+a:hover {
+    text-decoration: underline;
+}
+
+/* ??????????????? */
+ins, a {
+    text-decoration: none;
+}
+
+/* ?????? u ???? html5 Draft?????????????????
+ * ??????????????? class="typo-u" ??????
+ * ?? <u> ???http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
+ * ????? 4??????? http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
+ * ???? <u> ????????http://html5doctor.com/u-element/
+ */
+u, .typo-u {
+    text-decoration: underline;
+}
+
+/* ??????????????? */
+mark {
+    background: #fffdd1;
+}
+
+/* ???? */
+pre, code {
+    font-family: Monaco, Menlo, Consolas, Courier New, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+}
+pre>code {
+    border:none;
+}
+pre {
+    border-left-width: 0.4em;
+    padding: 10px;
+}
+code {
+    padding: 0 5px;
+    margin: 0 2px;
+    font-size: 0.9em;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+/* ??????????? */
+small {
+    font-size: 12px;
+    color: #888;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+
+ul,ol {
+    margin: 0 0 0 30px;
+    list-style: disc
+}
+table {
+    border-collapse: separate;
+    border-spacing: 5px
+}
+caption,th,td {
+    vertical-align: top
+}
+
+/* ???typo?????? */
+
+
+
+
+html,body {
+    background-color: #ececec;
+    margin:0;
+    height:100%;
+}
+
+a {
+    color: #019875;
+}
+header {
+    background-color: #363636;
+    height: 25px;
+    width: 100%;
+}
+.searchBox,.headerMenu {
+    float: left;
+}
+.headerMenu>ul {
+    list-style: none;
+    display: table;
+    margin: 0;
+}
+.headerMenu>ul>li {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    font-family: 'Merriweather',Georgia,serif;
+    font-weight: 400;
+    color: #CBCBCB;
+}
+.wrapper>.center>.socnets,.wrapper>.center>.socnets>a {
+    float: right;
+    color: #CBCBCB;
+    margin-right: 10px;
+    font-size: 16px;
+}
+header a {
+    color: #CBCBCB;
+}
+header a:hover,header a:focus,header i:hover,header i:focus {
+    text-decoration: none;
+    color:#fff;
+}
+.brand {
+    text-align: center;
+}
+.brand>.wide>.center>h1>a {
+    color: #363636;
+}
+.brand>.wide>.center>h1>a:hover {
+    text-decoration: none;
+    color:#555;
+}
+.brand>.wide>.center>p {
+    color: #A0A0A0;;
+}
+
+.wide {
+    width: 100%;
+    padding: 60px 0 60px 0;
+    margin: 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.content>.wide:nth-child(2n+1){
+    content: "";
+    background: #f1f1f1;
+    height: 100%;
+    width: 100%;
+}
+footer {
+    background-color: #e0e0e0;
+}
+.head {
+    height: 14px;
+}
+.timeLine {
+    height: 11px;
+    border-bottom: 1px dotted;
+}
+.wide>.center>.head>.timeLine>.date {
+    background-color: #ececec;
+    position: relative;
+    display: inline;
+    float: left;
+    padding-right:20px;
+}
+.wide>.center>.entry .caption {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    position: relative;
+    font-size: 0.9em;
+    padding-left: 25px;
+
+}
+
+.wide>.center>.entry img, .wide>.center>.entry video {
+max-width: 100%;
+height: auto;
+border: none;
+}
+
+.wide:nth-child(2n+1)>.center>.head>.timeLine>.date {
+    background: #f1f1f1;
+}
+.wide>.center>.head>.timeLine>.date>a {
+    text-decoration: none;
+    color: #777777;
+    font-family: 'Merriweather',Georgia,serif;
+    font-size: 14px;
+}
+.center{
+    max-width:700px ;
+    margin:auto;
+}
+
+.center>h2 {
+    text-align: center;
+}
+
+.center>h2>a {
+    color: #555;
+}
+.center>h2>a:hover,.wide>.center>.head>.timeLine>.date>a:hover {
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+}
+
+.center>h2.archives {
+    border-bottom: 1px dashed gray;
+    font-family: 'Merriweather',Georgia,serif;
+}
+.center>ul>li>time {
+    font-family: 'Merriweather',Georgia,serif;
+}
+.liArchive {
+    margin: 10px;
+}
+.timeArchive {
+    float: right;
+}
+.prev,.next,.backTop {
+    color: #555555;
+    border: 1px dotted silver;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0 10px 0 10px;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+.backTop {
+    position: fixed;
+    right: 5%;
+    top: 90%;
+    z-index: 50;
+}
+
+footer {
+    text-align: center;
+}
+/*gist*/
+.entry .gist {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    padding: 7px 15px;
+    border-radius: 2px;
+    text-shadow: 0 0 1px #fff;
+    line-height: 1.6;
+    overflow: auto;
+    color: #666;
+}
+.entry .gist .gist-file {
+    border: none;
+    font-family: inherit;
+    margin: 0;
+    font-size: 0.9em;
+}
+.entry .gist .gist-file .gist-data {
+    background: #f7f7f7;
+    border-bottom: none;
+}
+.entry .gist .gist-file .gist-data pre {
+    padding: 0 !important;
+    font-family: Monaco, Menlo, Consolas, Courier New, monospace;
+}
+.entry .gist .gist-file .gist-meta {
+    background: #f7f7f7;
+    color: #999;
+    margin-top: 5px;
+    padding: 0;
+    text-shadow: 0 0 1px #fff;
+    font-size: 100%;
+}
+.entry .gist .gist-file .gist-meta a {
+    color: #258fb8;
+}
+.entry .gist .gist-file .gist-meta a:visited {
+    color: #258fb8;
+}
+figure.highlight {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    padding: 7px 15px;
+    border-radius: 2px;
+    text-shadow: 0 0 1px #fff;
+    line-height: 1.6;
+    overflow: auto;
+    position: relative;
+    font-size: 0.9em;
+}
+figure.highlight figcaption {
+    color: #999;
+    margin-bottom: 5px;
+    text-shadow: 0 0 1px #fff;
+}
+figure.highlight figcaption a {
+    position: absolute;
+    right: 15px;
+}
+figure.highlight pre {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+figure.highlight table {
+    margin-top: 0;
+    border-spacing: 0;
+}
+figure.highlight .gutter {
+    color: #999;
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+    text-align: right;
+}
+figure.highlight .code {
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+    color: #666;
+}
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .doctype,
+pre .pi,
+pre .lisp .string,
+pre .javadoc {
+    color: #93a1a1;
+    font-style: italic;
+}
+pre .keyword,
+pre .winutils,
+pre .method,
+pre .addition,
+pre .css .tag,
+pre .request,
+pre .status,
+pre .nginx .title {
+    color: #859900;
+}
+pre .number,
+pre .command,
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula,
+pre .regexp,
+pre .hexcolor {
+    color: #2aa198;
+}
+pre .title,
+pre .localvars,
+pre .chunk,
+pre .decorator,
+pre .built_in,
+pre .identifier,
+pre .vhdl,
+pre .literal,
+pre .id {
+    color: #268bd2;
+}
+pre .attribute,
+pre .variable,
+pre .lisp .body,
+pre .smalltalk .number,
+pre .constant,
+pre .class .title,
+pre .parent,
+pre .haskell .type {
+    color: #b58900;
+}
+pre .preprocessor,
+pre .preprocessor .keyword,
+pre .shebang,
+pre .symbol,
+pre .symbol .string,
+pre .diff .change,
+pre .special,
+pre .attr_selector,
+pre .important,
+pre .subst,
+pre .cdata,
+pre .clojure .title {
+    color: #cb4b16;
+}
+pre .deletion {
+    color: #dc322f;
+}

@@ -1,0 +1,29 @@
+// Clearfix
+clearfix()
+	&:after
+		content ''
+		clear both
+		display block
+
+// Center-align a block level element
+center-block()
+	display block
+	margin-left auto
+	margin-right auto
+
+// Sizing shortcuts
+size(width, height)
+	width width
+	height height
+
+square(var)
+	size(var, var)
+
+// Sprite image
+bg-sprite(name)
+	path = img-path + name
+	overflow hidden
+	background-image url(path)
+	background-size image-size(path)
+	background-repeat no-repeat
+	text-indent 100%

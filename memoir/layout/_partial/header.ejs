@@ -1,0 +1,26 @@
+        <header>
+            <div class="wrapper">
+                <div class="center">
+                    <div class="searchBox"></div>
+                    <div class="headerMenu">
+                        <ul>
+                            <% for (var i in theme.menu){ %>
+                            <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+                            <% } %>
+                        </ul>
+                    </div>
+                    <div class="socnets">
+                        <%if (theme.twitter){%>
+                        <a href="https://twitter.com/<%=theme.twitter%>"><i class="foundicon-twitter" alt="twitter"></i></a>
+                        <%}%>
+                        <%if (theme.github){%>
+                        <a href="https://github.com/<%=theme.github%>" alt="github"><i class="foundicon-github"></i></a>
+                        <%}%>
+                        <a href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" alt="rss"><i class="foundicon-rss"></i></a>
+                        <%if (config.email){%>
+                        <a href="mailto:<%=config.email%>"><i class="foundicon-chat"></i></a>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+        </header>

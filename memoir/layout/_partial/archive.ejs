@@ -1,0 +1,40 @@
+<%
+var title = '';
+if (page.category) title = page.category;
+if (page.tag) title = page.tag;
+if (page.archive){
+  if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+  else title = __('archive_a');
+}
+%>
+
+<% if (pagination == 2){ %>
+  <% page.posts.each(function(item){ %>
+    <%- partial('article', {item: item, index: true}) %>
+  <% }); %>
+
+  <%- partial('pagination') %>
+<% } else { %>
+<div class="wide">
+<div class="center">
+  <% var this_year; %>
+  <% page.each(function(item){ %>
+    <% var year = item.date.year(); %>
+    <% if (!this_year){ %>
+      <% this_year = year; %>
+      <h2 class="archives"><%= year %></h2>
+      <ul>
+    <% }if(this_year != year){ %>
+      <% this_year = year; %>
+      </ul>
+      <h2 class="archives"><%= year %></h2>
+      <ul>
+    <% } %>
+    <li class="liArchive">
+      <a href="<%- config.root %><%- item.path %>"><%= item.title %></a><span class="timeArchive"><time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format('MMM D') %></time></span>
+    </li>
+  <% }); %>
+</ul>
+</div>
+</div>
+<% } %>

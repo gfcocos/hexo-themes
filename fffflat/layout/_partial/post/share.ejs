@@ -1,0 +1,14 @@
+		<aside class="social-btn">
+			<ul>
+				<li><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%- config.url %><%- item.path %>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=436,width=626');return false;"></a></li>
+				<li><a class="twitter" href="http://twitter.com/share?text=<%= item.title %>｜<%= config.title %>&amp;url=<%- config.url %><%- item.path %>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=600');return false;"></a></li>
+				<li><a class="google" href="https://plus.google.com/share?url=<%- config.url %><%- item.path %>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a></li>
+			</ul>
+		</aside>
+		<!-- <aside class="social-btn">
+			<ul>
+				<li><fb:like href="<%- config.url %><%- item.path %>" send="false" layout="button_count" width="90" show_faces="false"></fb:like></li>
+				<li><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="konitter" data-lang="en">Tweet</a></li>
+				<li><g:plusone size="medium" href="<%- config.url %><%- item.path %>"></g:plusone></li>
+			</ul>
+		</aside> -->

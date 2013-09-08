@@ -1,0 +1,13 @@
+	<article class="post">
+		<header class="post-header">
+			<%- partial('post/title') %>
+		</header>
+		<div class="post-entry">
+<% if (item.excerpt && index){ %>
+<%- item.excerpt %>
+<% } else { %>
+<%- item.content %>
+<% } %>
+		</div>
+<%- partial('post/share') %>
+	</article>

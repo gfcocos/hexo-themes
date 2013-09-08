@@ -1,0 +1,10 @@
+menu:
+  Home: /
+  Archives: /archives
+
+widgets:
+
+excerpt_link: Read More
+
+google_analytics: UA-16832147-1
+rss:

@@ -1,0 +1,152 @@
+@import 'nib'
+@import '_partial/setting'
+@import '_partial/reset'
+@import '_partial/mixins'
+
+body
+	line-height line-height-base
+	background body-bg url(img/bg.png)
+	font-family font-base
+	font-size font-size-base
+	color text-color
+
+a
+	color link-color
+	text-decoration none
+	&:hover
+		text-decoration underline
+
+h2
+	margin 3em 0 .7em
+	padding-bottom 8px
+	border-bottom 1px solid #eee
+	font-size 1.54em
+h3
+	margin 1.3em 0 1em
+	font-size 1.23em
+h4
+	margin 1.2em 0 .7em
+
+p + h3
+p + h4
+	margin-top 3em
+
+// global
+#header
+	padding 20px 0
+	background color-pink
+
+#header
+#footer
+	.wrapper
+		clearfix()
+		width page-width
+		center-block()
+
+#logo
+	float left
+	line-height 1.35
+	margin 0
+	color #fff
+	font-family "Oswald", font-sans-serif
+	font-size 2.3em
+	a
+		color #fff
+		&:hover
+			text-decoration none
+
+#nav
+	clearfix()
+	float right
+	ul
+		margin .8em 0 0
+	li
+		float left
+		margin-left 30px
+		list-style none
+	a
+		color rgba(#fff, .6)
+		&:hover
+			color #fff
+			text-decoration none
+
+#footer
+	color text-sub-color
+
+#posts
+	width page-width
+	center-block()
+
+// post
+.post
+	clearfix()
+	margin 60px 0
+	padding-bottom post-ws
+	background #fff
+	box-shadow 0 1px 3px 0 rgba(0,0,0,0.2)
+
+.post-header
+	margin-bottom post-ws
+	padding post-ws
+	border-bottom 1px solid #f0f0f0
+	a
+		color headings-color
+		&:hover
+			color link-color
+			text-decoration none
+
+.post-time
+	margin-top 3px
+	color text-sub-color
+
+.post-entry
+	float right
+	width 500px
+	padding-right post-ws
+	> *:first-child
+		margin-top 0
+
+// social
+.social-btn
+	float left
+	width 190px
+	padding-left post-ws
+	ul
+		clearfix()
+		margin 0
+		padding-left 0
+		list-style none
+		li
+			float left
+			margin-right 10px
+			a
+				display block
+				square(30px)
+				bg-sprite('social-icons.png')
+	.facebook
+		background-position 0 0
+		&:hover
+			background-position 0 100%
+	.twitter
+		background-position -30px 0
+		&:hover
+			background-position -30px 100%
+	.google
+		background-position -330px 0
+		&:hover
+			background-position -330px 100%
+
+// syntax
+figure.highlight
+	background #f2f2f2
+	margin 1.6em 0 2em
+	padding 7px 15px
+	border-radius 3px
+	line-height 1.6
+	overflow auto
+	position relative
+	font-size .9em
+	pre
+		margin 0
+	.gutter
+		display none

@@ -1,0 +1,26 @@
+<article class="<% if (item.layout == 'page'){ %>page<% } else { %>post<% } %>">
+  <% if (item.photos){ %>
+    <%- partial('post/gallery') %>
+  <% } %>
+  <header>
+    <%- partial('post/title') %>
+    <% if (item.layout != 'page'){ %><%- partial('post/date') %><% } %>
+  </header>
+  <div class="entry-content">
+    <% if (item.excerpt && index){ %>
+      <%- item.excerpt %>
+    <% } else { %>
+      <%- item.content %>
+    <% } %>
+    <% if (item.layout != 'page'){ %>
+    <footer class="meta">
+      <%- partial('post/category') %>
+      <%- partial('post/tag') %>
+      <% if (config.disqus_shortname && item.comment){ %>
+        <a href="<%- item.permalink %>#disqus_thread" class="comment"><%= __('comment') %></a>
+      <% } %>
+    </footer>
+    <% } %>
+  </div>
+  <%- partial('comment') %>
+</article>

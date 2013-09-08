@@ -1,0 +1,26 @@
+menu:
+  Home: /
+  Archives: archives
+
+excerpt_link: Continue Reading →
+
+mathjax: true
+fancybox: true
+
+social:
+  twitter: true
+  github: true
+  rss: true
+
+twitter:
+  username: nuklly
+
+github:
+  username: nuklly
+
+addit:
+  facebook: false
+  twitter: true
+  gplus: true
+  pinit: false
+  publid: ra-5206464767bea141

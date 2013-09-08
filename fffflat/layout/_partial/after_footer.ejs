@@ -1,0 +1,24 @@
+<script>
+(function(d, s) {
+	var js, fjs = d.getElementsByTagName(s)[0],
+	add = function(url, id, o) {
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.src = url; js.async = true; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		if (window.ActiveXObject && o != null) {
+			js.onreadystatechange = function() {
+				if (js.readyState == 'complete') o();
+				if (js.readyState == 'loaded') o();
+			};
+		} else { js.onload = o; }
+	};
+	// Google+1
+	window.___gcfg = { lang: "ja" };
+	add('https://apis.google.com/js/plusone.js');
+	// Facebook
+	add('//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=231858050163702', 'facebook-jssdk');
+	// Twitter
+	add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+}(document, 'script'));
+</script>
