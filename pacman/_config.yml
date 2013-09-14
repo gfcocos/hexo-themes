@@ -1,0 +1,31 @@
+menu:
+  博客: /
+  存档: /archives
+  关于: /about
+  实验室: /lab
+  简历: /resume
+
+widgets: 
+- category
+- tag
+- rss
+
+excerpt_link: Read More
+
+google_analytics: 
+
+duoshuo: gfcocos
+
+google_plus: 
+
+weibo_url: http://weibo.com/3771880151
+twitter_url: https://twitter.com/
+github_url: https://github.com/
+facebook_url: https://www.facebook.com/
+
+jiathis:
+  enable: true
+  id: 1377819925567155 
+  tsina: 3771880151
+  
+rss: http://www.gfcocos.tk/atom.xml
